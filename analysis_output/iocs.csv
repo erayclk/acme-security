@@ -1,0 +1,11 @@
+Type,Value,Source,Context,FirstSeen
+Email,security@acme-finance.com,email_logs.csv,Phishing sender - Subject: URGENT: Verify Your Account - Action Required,2024-10-15 09:00:23
+Email,support@acme.com,email_logs.csv,Phishing sender - Subject: Re: Account inquiry,2024-10-15 09:15:45
+IP,192.168.1.100,api_logs.csv,Brute force attempt - 5 failed auth attempts,2024-10-15 01:30:15
+IP,10.0.0.50,api_logs.csv,Account enumeration - User sec_team accessed 5 accounts,2024-10-15 01:45:10
+IP,203.0.113.45,api_logs.csv,Broken Access Control - User 1523 accessed account 1524.0,2024-10-15 06:47:15
+IP,10.0.2.30,email_logs.csv,Phishing email sender IP - support@acme.com,2024-10-15 09:15:45
+SessionToken,jwt_token_1523_stolen,api_logs.csv,Compromised token used for unauthorized access,2024-10-15 06:47:15
+User-Agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/118.0,web_logs.csv,SQL injection attempt,2024-10-15 09:20:30
+UserID,sec_team,api_logs.csv,Account enumeration - 5 accounts in 20.0s,2024-10-15 01:45:10
+UserID,1523,api_logs.csv,Unauthorized access to account 1524.0,2024-10-15 06:47:15

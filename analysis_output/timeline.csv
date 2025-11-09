@@ -1,0 +1,34 @@
+Timestamp,Source,Event,Detail,IP,Severity
+2024-10-15 01:30:15,API,Brute Force Attempt,Multiple failed authentication attempts (5) from 192.168.1.100,192.168.1.100,HIGH
+2024-10-15 01:45:10,API,Account Enumeration,User sec_team accessed 5 different accounts in 20.0 seconds,10.0.0.50,HIGH
+2024-10-15 06:47:15,API,Broken Access Control,User 1523 accessed account 1524.0 via /api/v1/portfolio/1524 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:18,API,Broken Access Control,User 1523 accessed account 1525.0 via /api/v1/portfolio/1525 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:21,API,Broken Access Control,User 1523 accessed account 1526.0 via /api/v1/portfolio/1526 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:24,API,Broken Access Control,User 1523 accessed account 1527.0 via /api/v1/portfolio/1527 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:27,API,Broken Access Control,User 1523 accessed account 1528.0 via /api/v1/portfolio/1528 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:30,API,Broken Access Control,User 1523 accessed account 1529.0 via /api/v1/portfolio/1529 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:33,API,Broken Access Control,User 1523 accessed account 1530.0 via /api/v1/portfolio/1530 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:36,API,Broken Access Control,User 1523 accessed account 1531.0 via /api/v1/portfolio/1531 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:39,API,Broken Access Control,User 1523 accessed account 1532.0 via /api/v1/portfolio/1532 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:42,API,Broken Access Control,User 1523 accessed account 1533.0 via /api/v1/portfolio/1533 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:45,API,Broken Access Control,User 1523 accessed account 1534.0 via /api/v1/portfolio/1534 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:48,API,Broken Access Control,User 1523 accessed account 1535.0 via /api/v1/portfolio/1535 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:51,API,Broken Access Control,User 1523 accessed account 1536.0 via /api/v1/portfolio/1536 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:54,API,Broken Access Control,User 1523 accessed account 1537.0 via /api/v1/portfolio/1537 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:57,API,Broken Access Control,User 1523 accessed account 1538.0 via /api/v1/portfolio/1538 (Status: 200) from 203.0.113.45,203.0.113.45,CRITICAL
+2024-10-15 06:47:57,WAF,WAF Alert: Possible Account Enumeration,"DETECT from 203.0.113.45 → /api/v1/portfolio/1538 (Rule: 942100, Severity: HIGH)",203.0.113.45,HIGH
+2024-10-15 09:00:23,Email,Phishing Campaign,Phishing email from 'security@acme-finance.com' to 'user1@acme.com' - Subject: 'URGENT: Verify Your Account - Action Required' [LINK CLICKED],203.0.113.45,HIGH
+2024-10-15 09:00:23,WAF,WAF Alert: Suspicious Link Pattern,"DETECT from 203.0.113.45 → /verify-account.php (Rule: 950107, Severity: HIGH)",203.0.113.45,HIGH
+2024-10-15 09:00:25,Email,Phishing Campaign,Phishing email from 'security@acme-finance.com' to 'user2@acme.com' - Subject: 'URGENT: Verify Your Account - Action Required',,HIGH
+2024-10-15 09:00:27,Email,Phishing Campaign,Phishing email from 'security@acme-finance.com' to 'user3@acme.com' - Subject: 'URGENT: Verify Your Account - Action Required' [LINK CLICKED],203.0.113.45,HIGH
+2024-10-15 09:00:29,Email,Phishing Campaign,Phishing email from 'security@acme-finance.com' to 'user4@acme.com' - Subject: 'URGENT: Verify Your Account - Action Required',,HIGH
+2024-10-15 09:00:31,Email,Phishing Campaign,Phishing email from 'security@acme-finance.com' to 'user5@acme.com' - Subject: 'URGENT: Verify Your Account - Action Required' [LINK CLICKED],203.0.113.45,HIGH
+2024-10-15 09:00:33,Email,Phishing Campaign,Phishing email from 'security@acme-finance.com' to 'user6@acme.com' - Subject: 'URGENT: Verify Your Account - Action Required',,HIGH
+2024-10-15 09:15:45,Email,Phishing Campaign,Phishing email from 'support@acme.com' to 'customer1@example.com' - Subject: 'Re: Account inquiry',10.0.2.30,HIGH
+2024-10-15 09:20:30,WAF,WAF Alert: SQL Injection Attempt - OR 1=1,"DETECT from 203.0.113.45 → /dashboard/search (Rule: 981173, Severity: HIGH)",203.0.113.45,HIGH
+2024-10-15 09:20:30,Web,SQL Injection Attempt,SQLi from 203.0.113.45 → /dashboard/search?ticker=AAPL' OR 1=1-- (Status: 403),203.0.113.45,HIGH
+2024-10-15 09:21:15,WAF,WAF Alert: SQL Injection - DROP TABLE,"BLOCK from 203.0.113.45 → /dashboard/search (Rule: 981318, Severity: CRITICAL)",203.0.113.45,CRITICAL
+2024-10-15 09:21:15,Web,SQL Injection Attempt,SQLi from 203.0.113.45 → /dashboard/search?ticker=AAPL'; DROP TABLE users-- (Status: 403),203.0.113.45,HIGH
+2024-10-15 09:22:00,WAF,WAF Alert: SQL Injection - UNION SELECT,"BLOCK from 203.0.113.45 → /dashboard/search (Rule: 981257, Severity: HIGH)",203.0.113.45,HIGH
+2024-10-15 09:22:00,Web,SQL Injection Attempt,SQLi from 203.0.113.45 → /dashboard/search?ticker=AAPL' UNION SELECT * FROM users-- (Status: 403),203.0.113.45,HIGH
+2024-10-15 09:23:45,Web,SQL Injection Attempt,SQLi from 203.0.113.45 → /dashboard/search?ticker=AAPL' /*!50000OR*/ 1=1-- (Status: 200),203.0.113.45,CRITICAL
